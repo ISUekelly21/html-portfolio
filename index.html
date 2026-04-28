@@ -11,7 +11,7 @@
 </head>
 
 <body>
-
+<button id="darkModeToggle">Switch to Light Mode</button>
     <!-- Top Section  -->
     <div class="container">
         <h1>My Portfolio</h1>
@@ -33,17 +33,23 @@
     <div class="project">
         <h3>Movie Ranking Project</h3>
         <p>This project ranks my favorite movies using HTML lists.</p>
-        <img src="assets/images/favmovies.png" alt="Movie Project">
+
+        <a href="movie.html">
+            <img src="assets/images/favmovies.png" alt="Movie Project">
+        </a>
+
         <br>
-        <a href="movie.html">View Project</a>
     </div>
 
     <div class="project">
         <h3>Birthday Invite Project</h3>
         <p>This project is a simple birthday invitation webpage.</p>
-        <img src="assets/images/party.png" alt="Birthday Project">
+
+        <a href="party.html">
+            <img src="assets/images/party.png" alt="Birthday Project">
+        </a>
+
         <br>
-        <a href="party.html">View Project</a>
     </div>
 
     <!-- About -->
@@ -57,6 +63,16 @@
     <!-- Contact -->
     <h2>Contact</h2>
     <p>Email: ekelly21@sycamores.indstate.edu</p>
+    <p>
+        LinkedIn: <a href="https://www.linkedin.com/in/ISUekelly21">View My LinkedIn</a>
+    </p>
+
+    <form id="contactForm">
+        <input type="text" placeholder="Your Name" required><br><br>
+        <input type="email" placeholder="Your Email" required><br><br>
+        <textarea placeholder="Your Message" required></textarea><br><br>
+        <button type="submit">Send Message</button>
+    </form>
 
     <!-- Footer -->
     <footer>
@@ -65,6 +81,8 @@
                 <a href="https://github.com/ISUekelly21">GitHub Profile</a>
             </p>
     </footer>
+    <!-- JavaScript File-->
+    <script src="script.js"></script>
 
 </body>
 </html>
